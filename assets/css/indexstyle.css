@@ -1,0 +1,540 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+*{
+  font-family: 'Varela Round', sans-serif;
+  
+}
+
+html, body{
+  height: 100%;
+  width: 100% !important;
+}
+
+html {
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
+/*----------------------[NAV]----------------------*/
+nav{
+    width: 100%;
+    height: 3.5rem;
+}
+
+/*Navbar background color*/
+.navbar-custom{
+  background-color: hsl(206, 70%, 40%);
+  border-bottom: 0.5px solid hsl(0, 0%, 73%);
+}
+
+.custom-toggler.navbar-toggler {
+  border: 2px solid hsl(0, 0%, 100%);
+}
+/* Setting the stroke to green using rgb values (0, 128, 0) */
+    
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(250, 250, 250)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+
+}
+
+@media only screen and (max-width : 768px) {
+  .navbar-collapse {
+    border-radius: 0% !important;
+    background: hsl(206, 70%, 40%) !important;
+    border: 2px solid hsl(0, 0%, 100%) !important;
+    z-index: 9999;
+}
+}
+
+
+/*Navbar a color and size*/
+.nav-item a, 
+#nav-contact{
+  font-size: 1.3rem;
+  font-weight: 1rem;
+  text-decoration: none;
+  color: hsl(0, 0%, 100%) !important;
+}
+
+/*Hover the a tags color change (Home, Abour, Work, Blog and Contact)*/
+.nav-item a, 
+#nav-contact:hover{
+  color: hsl(0, 1%, 83%);
+  transition: 0.5s;
+}
+
+
+/*----------------------[NAV]----------------------*/
+
+
+
+
+/*----------------------[MAIN]----------------------*/
+
+.top-section-back{
+  width: 100%;
+  height: 32rem;
+  background-color: hsl(206, 70%, 40%);
+  border-radius: 0 0 45% 45%;
+}
+
+/*Rounded top section responsive*/
+@media only screen and (max-width : 768px) {
+  .top-section-back{
+    height: 100%;
+    border-radius: 0%;
+  }
+}
+
+
+
+.image-main img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 28px;  
+}
+
+
+
+.text{
+  margin-top: 9rem;
+}
+.text h1{
+  color: hsl(0, 0%, 100%);
+}
+.text p{
+  color: hsl(0, 1%, 80%);
+}
+
+@media only screen and (max-width : 768px) {
+  .text{
+    margin-top: 2rem;
+  }
+  .image-main img{
+    width: 100%;
+  }
+}
+
+
+/*MIDLE SECTION*/
+.middle-section{
+  margin-top: 5rem;
+}
+
+.text-middle{
+  margin-top: 5.3rem;
+  color: hsl(0, 1%, 80%);
+}
+
+.image-box img{
+  border-radius: 5px;
+  max-height: 30rem;
+  max-width: 33rem;
+}
+
+@media only screen and (max-width : 768px) {
+  .image-box img{
+    width: 100%;
+  }
+}
+
+/*Word ABOUT*/
+.middle-section h1{
+  color: hsl(0, 0%, 20%);
+}
+
+/*Word ME*/
+.Me{
+  color: hsl(206, 70%, 40%);
+}
+
+
+/*Button read More next to the Photo example*/
+.read-middle {
+  text-decoration: none;
+	background-color:transparent;
+	-webkit-border-top-left-radius:2px;
+	-moz-border-radius-topleft:2px;
+	border-top-left-radius:2px;
+	-webkit-border-top-right-radius:2px;
+	-moz-border-radius-topright:2px;
+	border-top-right-radius:2px;
+	-webkit-border-bottom-right-radius:2px;
+	-moz-border-radius-bottomright:2px;
+	border-bottom-right-radius:2px;
+	-webkit-border-bottom-left-radius:2px;
+	-moz-border-radius-bottomleft:2px;
+	border-bottom-left-radius:2px;
+  text-indent:0;
+	border:3px solid hsl(120, 1%, 72%);
+	display:inline-block;
+	color:hsl(300, 1%, 57%);
+	font-family:arial;
+	font-size:17px;
+	font-weight:bold;
+	font-style:normal;
+  height:55px;
+	line-height:55px;
+  width:131px;
+	text-align:center;
+
+}
+.read-middle:hover{
+  /*Border Color transition*/
+  -webkit-transition: color 1s ease-out;
+  -moz-transition: color 1s ease-out;
+  -o-transition: color 1s ease-out;
+  transition: color 1s ease-out;
+
+  /*Border Color transition*/
+  -webkit-transition: border 1s ease-out;
+  -moz-transition: border 1s ease-out;
+  -o-transition: border 1s ease-out;
+  transition: border 1s ease-out;
+
+  text-decoration:none;
+  color:hsl(0, 0%, 25%);
+  border:3px solid hsl(0, 0%, 25%);
+  
+}
+/*MIDLE SECTION*/
+
+
+
+
+/*WORK SECTION*/
+
+.work-section{
+  width: 100%;
+  margin-top: 3.5rem;
+}
+
+.work-section-back{
+  width: 100%;
+  background-color: hsl(204, 3%, 33%);
+}
+
+
+/*WORK Title*/
+.text-work h1{
+  margin-top: 1rem;
+  display: block;
+  text-align: center;
+  color: hsl(0, 0%, 100%);
+}
+/*Text*/
+.text-work p{
+  margin-top: 1rem;
+  display: block;
+  text-align: center;
+  color: hsl(0, 1%, 80%)
+}
+
+
+.carousel-item img{
+  height: 50rem;
+}
+
+@media only screen and (max-width : 768px) {
+  .carousel-item img{
+    height: 25rem;
+  }
+}
+
+#carouselExampleIndicators{
+  margin-bottom: 5rem;
+}
+
+/*WORK SECTION*/
+
+
+
+/*Equipment SECTION*/
+
+
+.text-middle h1{
+  color: hsl(0, 0%, 20%);
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.btn {
+  color: hsl(0, 0%, 100%);
+  padding: 0.8rem;
+  font-size: 14px;
+  text-transform: uppercase;
+  border-radius: 4px;
+  font-weight: 400;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  border: 1px solid hsla(0, 0%, 100%, 0.2);
+  background: transparent;
+}
+
+.btn:hover {
+  background-color: hsla(0, 0%, 100%, 0.12);
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cards_item {
+  display: flex;
+  padding: 1rem;
+}
+
+@media (min-width: 40rem) {
+  .cards_item {
+    width: 50%;
+  }
+}
+
+@media (min-width: 56rem) {
+  .cards_item {
+    width: 33.3333%;
+  }
+}
+
+.card {
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 0.25rem;
+  box-shadow: 0 20px 40px -14px hsla(0, 0%, 0%, 0.25);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.card_content {
+  padding: 1rem;
+  height: 100%;
+  background: hsl(204, 3%, 33%);
+}
+
+.card_title {
+  color: hsl(0, 0%, 100%);
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  margin: 0px;
+}
+
+.card_image img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 500px;
+  height: 300px;
+  width: 100%;
+}
+
+.card_text {
+  color: hsl(0, 0%, 100%);
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin-bottom: 1.25rem;    
+  font-weight: 400;
+}
+
+@media only screen and (max-width : 768px) {
+  .cards_item{
+    width: 100%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Equipment SECTION*/
+
+
+
+
+/*----------------------[MAIN]----------------------*/
+
+
+
+
+
+
+/*----------------------[FOOTER]----------------------*/
+
+.footer {
+  background-color: hsl(206, 70%, 40%);
+  padding: 7rem 0;
+  font-size: 16px;
+}
+
+/*CONTACTS / SOCIAL MEDIA*/
+.footer h1 {
+  color: hsl(0, 0%, 100%);
+  margin-bottom: 30px; 
+}
+
+/*Space Between instagram Images*/
+.footer .row.gallery > [class^="col-"],
+.footer .row.gallery > [class*=" col-"] {
+  padding-right: 5px;
+  padding-left: 5px; 
+}
+
+/*Top instagram images space between down ones*/
+.footer .gallery a {
+  display: block;
+  margin-bottom: 10px;
+  -webkit-transition: .3s all ease;
+  -o-transition: .3s all ease;
+  transition: .3s all ease; 
+}
+
+
+/*Phone Number and Email space*/
+.footer .quick-info li {
+  color: hsl(0, 0%, 100%);
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.footer .quick-info li a {
+  color: hsl(0, 0%, 100%); 
+}
+
+
+@media (max-width: 767.98px) {
+  .footer .footer-menu li {
+    display: block; 
+  } 
+}
+
+@media (max-width: 767.98px) {
+  .footer .footer-menu li a {
+    display: block;
+    padding-left: 0px; 
+  }
+}
+
+
+/*Social Media ICONS*/
+.ulSocial li{
+  padding: 10px;
+  display: inline;
+
+}
+
+/*Instagram Icon*/
+#instagram:hover{
+  fill: hsl(277, 51%, 44%);
+}
+/*Facebook Icon*/
+#facebook:hover{
+  fill: hsl(201, 86%, 27%);
+}
+/*Twitter Icon*/
+#twitter:hover{
+  fill: hsl(201, 86%, 27%);
+}
+/*linkedin Icon*/
+#linkedin:hover{
+  fill: hsl(201, 86%, 27%);
+}
+/*Youtube Icon*/
+#yt:hover{
+  fill: hsl(9, 100%, 50%);
+}
+
+
+/*Instagram Images*/
+.gallery img{
+  height: 180px;
+}
+
+/*Phone Number and Email*/
+.footer a{
+  text-decoration: none;
+}
+/*----------------------[FOOTER]----------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*---Media Queries --*/
+@media (max-width: 992px) {
+
+  }
+@media (max-width: 768px) {
+  
+}
+@media (max-width: 576px) {
+  
+}
+
+
+/*--- Bootstrap Padding Fix --*/
+[class*="col-"] {
+    padding: 1rem;
+}
+
+
+
+
+
+/*
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+*/
+
+
+
+
+
+
+
+
